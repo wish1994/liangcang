@@ -48,7 +48,14 @@ header{
 }
 #banner{
 	width: 100%;
-	height: 700px;
+	height: 585px;
+	background: #262626;
+}
+.banner{
+	width:100%;
+	height:100%;
+	margin: auto;
 	background: url("http://www.5lux.com/vendor/images/5lux/login/new/login_background1.jpg") no-repeat;
-	background-size: 100% 700px;
+	background-position:150px 0px;
+	
 }
