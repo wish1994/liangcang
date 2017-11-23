@@ -47,7 +47,7 @@ header{
 	margin-right: 10px;
 	width: 25px;
 }
-@media screen and (max-width:1010px ){
+@media screen and (max-width:1020px ){
 	#regtel{
 		display: none;
 	}
@@ -69,7 +69,7 @@ header{
 }
 
 /* 注册部分 */
-#regForm{
+#loginForm{
 	width: 400px;
 	height: 450px;
 	float: right;
@@ -80,59 +80,32 @@ header{
 	margin-top: 30px;
 }
 @media screen and (max-width: 1220px){
-	#regForm{
+	#loginForm{
 		display: none;
 	}
 }
-#regHead{
-	font: bold 24px/60px heiti,arial;
-	padding-top: 5px;
+#loginHead{
+	font: bold 24px/80px heiti,arial;
 	text-align: center;
 	color: #333333;
 }
-#regForm .success{
-	color: green;
-	display: none;
-}
-#regForm .error{
-	color: red;
-	display: none;
-}
-#regForm input{
+
+#loginForm input{
 	width: 55%;
 	height: 40px;
-	margin-left: 50px;
-	margin-top: 20px;
+	margin-left: 80px;
+	margin-top: 40px;
 	color: #666666;
 	border: 2px solid #cccccc;
 	font: 16px/50px arail;
 	padding-left: 20px;
 }
 
-#regForm input::-webkit-input-placeholder{
+#loginForm input::-webkit-input-placeholder{
 	color: #aaaaaa;
 }
-#mima{
-	display: inline-block;
-	width: 66px;
-	height: 10px;
-}
-#mima div{
-	float: left;
-	width: 20px;
-	height: 8px;
-	border: 1px solid #dddddd;
-}
-#mima #red{
-	background: red;
-}
 
-.error1{
-	color: red;
-	display: none;
-}
-
-#reg{
+#login{
 	border: none;
 	width: 175px;
 	height: 50px;
@@ -140,11 +113,8 @@ header{
 	color: white;
 	font: 20px/50px arail;
 	transition: all 1s ;
-	margin-left: 80px;
+	margin-left: 100px;
 	margin-top: 30px;
-}
-#reg:hover{
-	background: rgb(200, 0, 0);
 }
 #tiaozhuan{
 	font: bold 16px simsun,arail;
@@ -154,4 +124,34 @@ header{
 }
 #tiaozhuan:hover{
 	color: red;
+}
+#login:hover{
+	background: rgb(200, 0, 0);
+}
+#goIndex{
+	display: block;
+	width: 180px;
+	font: bold 24px simsun,arail;
+	color: #666666;
+	margin-left: 80px;
+	margin-top: 40px;
+}
+#goIndex span{
+	font: bold 24px simsun,arail;
+	color: orange;
+	margin-left: 10px;
+}
+@keyframes move{
+	0%{
+		margin-left: 10px;
+	}
+	50%{
+		margin-left: 40px;
+	}
+	100%{
+		margin-left: 10px;
+	}
+}
+#goIndex:hover span{
+	animation: move 1s linear infinite;
 }

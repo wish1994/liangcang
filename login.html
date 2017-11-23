@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>欢迎注册来客多</title>
+		<title>欢迎登录来客多</title>
 	</head>
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-	<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
 	<link rel="stylesheet" type="text/css" href="css/jquery.idcode.css"/>
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="js/jquery.idcode.js"></script>
@@ -21,26 +21,15 @@
 		</header>
 		<div id="banner">
 			<div class="banner">
-				<div id="regForm">
-					<p id="regHead">注册来客多</p>
+				<div id="loginForm">
+					<p id="loginHead">登录来客多</p>
 				    <p>
 						<input type="text" name="username" placeholder="请输入用户名"/>
-						<span class="success">用户名可以使用</span>
-						<span class="error">用户名重复</span>
 					</p>
-					<input type="password" id="first" name="password" placeholder="请输入密码，长度为6-20位！"/>
-					<span id="mima">
-						<div id="red"></div>
-						<div id="green"></div>
-						<div id="blue"></div>
-					</span>
-					<input type="password" id="second" placeholder="请再次输入密码！"/>
-					<span class="error1">两次密码不一样</span>
-                    <input id="Txtidcode" class="txtVerification" type="text" maxlength="4" placeholder="输入验证码">
-                    <span id="idcode"></span>
-
-					<p><button id="reg">立即注册</button></p>
-					<a href="login.html" id="tiaozhuan">前往登录>></a>
+					<input type="password" name="password" placeholder="请输入密码"/>
+					<p><button id="login">立即登录</button></p>
+                    <a href="register.html" id="tiaozhuan">立即注册>></a>
+                    <a href="index.html" id="goIndex">前往首页<span>>></span></a>
 				</div>
 			</div>
 		</div>
@@ -52,5 +41,5 @@
         </script>	
 	</body>
 	<script src="js/animate-2.0.1.js"></script>
-	<script src="js/register.js"></script>
+	<script src="js/login.js"></script>
 </html>

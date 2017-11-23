@@ -1,0 +1,336 @@
+*{
+	color: white;
+}
+/* 右边菜单 */
+#right-box{
+	width: 38px;
+	height: 166px;
+	position: fixed;
+	right: 0;
+	bottom: 60px;
+}
+#right-box div{
+	width: 38px;
+	height: 40px;
+	margin-bottom: 2px;
+	background-color: rgba(50,50,50,0.6);
+	border-radius: 8px 0 0 8px;
+	background-image: url("../img/index.png");
+	background-repeat: no-repeat;
+}
+#right-box div:hover{
+	background-color: #c69c6d;
+}
+#right-box .kefu{
+	background-position: 3px -257px;
+	background-size: 480px 320px;
+}
+
+#right-box .weixin{
+	background-position: -473px 0;
+}
+#right-box .weixin:hover{
+	background-position: -473px -47px;
+}
+#right-box .tel{
+	background-image: url("../img/tel.png");
+	background-position: 12px 12px;
+}
+#right-box .tel:hover{
+	background-position: 12px -16px;
+}
+#right-box .toTop{
+	background-position: -404px 0;
+}
+#right-box .toTop:hover{
+	background-position: -398px -47px;
+}
+
+/* 底部样式 */
+#service{
+	padding: 51px 0 78px;
+	width: 100%;
+	border-top: #ededed 1px solid;
+	background: #fbfdfe;
+	margin: 90px auto 0;
+}
+
+#service > a{
+	display: block;
+	margin: auto;
+	width: 150px;
+	height: 50px;
+	background: url("../img/logo.png") no-repeat;
+	background-size: 150px 50px;
+}
+
+
+#service .slogen{
+	padding-top: 42px;
+	margin: 0 auto;
+	width: 1000px;
+	overflow: hidden;
+}
+
+#service .slogen .box , #service .slogen .box .pic , #service .slogen .box .text{
+	height: 60px;
+	float: left;
+}
+
+#service .slogen .box .pic{
+	background: url("../img/icon.png") no-repeat;
+}
+
+#service .slogen .box1 .pic{
+	width: 56px;
+	background-position: 0 -355px;
+}
+
+#service .slogen .box2 .pic{
+	width: 45px;
+	background-position: -153px -217px;
+}
+
+#service .slogen .box3 .pic{
+	width: 55px;
+	background-position: -57px -353px;
+}
+
+#service .slogen .box4 .pic{
+	width: 57px;
+	background-position: -114px -353px;
+}
+
+#service .slogen .box .text{
+	padding: 9px 0 0 20px;
+	letter-spacing: 1.2px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#service .slogen .box1 .text{
+	width: 185px;
+}
+
+#service .slogen .box2 .text{
+	width: 207px;
+}
+
+#service .slogen .box3 .text{
+	width: 177px;
+}
+
+#service .slogen .box4 .text{
+	width: 138px;
+}
+
+#service .slogen .box .chinese{
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	font-size: 14px;
+	color: #737373;
+	text-align: left;
+}
+
+#service .slogen .box .english{
+	font-size: 12px;
+	line-height: 22px;
+	color: #cccccc;
+}
+
+#end{
+	width: 100%;
+	padding-top: 80px;
+	height: 220px;
+	margin: 0 auto;
+	background-image: url("../img/footer_bg.jpg");
+	background-position: 0 -300px;
+}
+
+#end .end-wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#end .endLeft{
+	width: 800px;
+	padding-top: 40px;
+	float: left;
+}
+
+#end .endLeft a{
+	display: block;
+	height: 44px;
+	width: 196px;
+}
+
+#end .endLeft a .download{
+	width: 136px;
+	height: 44px;
+	padding: 0 0 0 60px;
+	background: url("../img/icon.png") no-repeat;
+	background-position: -175px 0;
+	color: #5c5c5c;
+	font-size: 14px;
+	letter-spacing: 2px;
+	position: relative;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+#end .endLeft .download p{
+	line-height: 18px;
+}
+
+#end .endLeft .download .client-down{
+	margin-top: 8px;
+}
+
+#end .endLeft .download .download-code{
+	width: 245px;
+	height: 140px;
+	position: absolute;
+	top: -160px;
+	left: 0;
+	background: #ffffff;
+	display: none;
+}
+
+#end .endLeft .download .download-code dl{
+	float: left;
+}
+
+#end .endLeft .download .download-code dl.android{
+	padding-left: 20px;
+}
+#end .endLeft .download-code dt{
+	height: 95px;
+	width: 98px;
+}
+
+#end .endLeft .download-code dl.iPhone dt{
+	border-right: #d9d9d9 1px solid;
+	background: url("../img/icon.png") no-repeat;
+	background-position: -99px -47px;
+	padding-right: 20px;
+}
+
+#end .endLeft .download-code dl.android dt{
+	background: url("../img/icon.png") no-repeat;
+	background-position: 0 -47px;
+}
+
+#end .endLeft .download-code dd{
+	width: 98px;
+	height: 52px;
+	line-height: 52px;
+	color: #4d4d4d;
+	text-align: center;
+	letter-spacing: 0;
+	font-size: 13px;
+}
+
+#end .endLeft a:hover .download p{
+	color: #b9b9b9;
+}
+
+#end .endLeft a:hover .download-code{
+	display: block;
+}
+
+#end .endLeft .friendly{
+	font-size: 12px;
+	letter-spacing: 3px;
+	margin-top: 29px;
+}
+
+#end .endLeft .friendly .toplink{
+	height: 14px;
+	margin-bottom: 9px;
+}
+
+#end .endLeft .friendly .toplink a{
+	height: 14px;
+	line-height: 14px;
+	padding: 0 8px 0 10px;
+	display: inline;
+	color: #5c5c5c;
+	background: url("../img/icon.png") -197px -189px no-repeat;
+}
+#end .endLeft .friendly p{
+	margin-top: 8px;
+}
+
+#end .endLeft .friendly .toplink a.first{
+	padding-left: 0;
+	background: none;
+}
+
+#end .endLeft .friendly a:hover{
+	color: #bfbfbf;
+}
+
+#end .endRight .sharing{
+	height: 30px;
+	padding: 45px 0 0;
+}
+
+#end .endRight .sharing li{
+	float: right;
+	height: 30px;
+	margin-left: 27px;
+	position: relative;
+}
+
+#end .endRight .sharing a{
+	display: block;
+	height: 20px;
+	opacity: 0.2;
+	background: url("../img/icon.png") no-repeat;
+}
+
+#end .endRight .sharing a.douban{
+	width: 18px;
+	background-position: -129px -25px;
+	overflow: hidden;
+}
+
+#end .endRight .sharing a.sina{
+	width: 23px;
+	background-position: -150px -23px;
+	overflow: hidden;
+}
+
+#end .endRight .sharing a.weixin{
+	width: 26px;
+	background-position: -100px -23px;
+}
+
+#end .endRight .sharing .wechat-code{
+	display: none;
+	width: 145px;
+	overflow: hidden;
+	height: 194px;
+	position: absolute;
+	top: -191px;
+	left: -60px;
+	z-index: 9999;
+}
+
+#end .endRight .sharing .wechat-code s{
+	width: 145px;
+	height: 145px;
+	background: url("../img/icon.png") no-repeat;
+	background-position: 0 -148px;
+	display: block;
+}
+
+#end .endRight .sharing a:hover{
+	opacity: 1;
+}
+
+#end .endRight .sharing a.weixin:hover .wechat-code{
+	display: block;
+}
+
