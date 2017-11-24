@@ -13,6 +13,7 @@ header{
 }
 #header #logo{
 	height: 100px;
+	width: 270px;
 }
 #header #headLine{
 	display: inline-block;
@@ -31,8 +32,13 @@ header{
 	margin-left: 20px;
 }
 @media screen and (max-width:580px ){
-	#duolai{
+	#duolai , #header #headLine{
 		display: none;
+	}
+	#header #logo{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 #header #regtel{
@@ -46,6 +52,25 @@ header{
 #regtel img{
 	margin-right: 10px;
 	width: 25px;
+}
+#gift{
+	position: absolute;
+	top: -300px;
+	left: 600px;
+}
+@keyframes chrMove{
+	0%{
+		top: -300px;
+	}
+	50%{
+		top: 200px;
+	}
+	75%{
+		top: 150px;
+	}
+	100%{
+		top: 200px;
+	}
 }
 @media screen and (max-width:1010px ){
 	#regtel{
@@ -79,9 +104,35 @@ header{
 	margin-right: 100px ;
 	margin-top: 30px;
 }
+@keyframes regMove{
+	0%{
+		margin-left: 730px;
+	}
+	100%{
+		margin-left: 80px;
+	}
+}
 @media screen and (max-width: 1220px){
 	#regForm{
+		float: left;
+		animation: regMove 1.5s forwards;
+	}
+	.banner{
+		background-image: none;
+	}
+	#gift{
+		z-index: 100;
+		animation: chrMove 2s ease-in-out forwards;
+	}
+}
+@media screen and (max-width: 1018px){
+	#gift{
 		display: none;
+	}
+	#regForm{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-65%);
 	}
 }
 #regHead{

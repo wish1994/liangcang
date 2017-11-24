@@ -13,6 +13,7 @@ header{
 }
 #header #logo{
 	height: 100px;
+	width: 270px;
 }
 #header #headLine{
 	display: inline-block;
@@ -31,8 +32,13 @@ header{
 	margin-left: 20px;
 }
 @media screen and (max-width:580px ){
-	#duolai{
+	#duolai , #header #headLine{
 		display: none;
+	}
+	#header #logo{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 #header #regtel{
@@ -52,7 +58,25 @@ header{
 		display: none;
 	}
 }
-
+#gift{
+	position: absolute;
+	top: -300px;
+	left: 500px;
+}
+@keyframes chrMove{
+	0%{
+		top: -300px;
+	}
+	50%{
+		top: 200px;
+	}
+	75%{
+		top: 150px;
+	}
+	100%{
+		top: 200px;
+	}
+}
 /* banner部分 */
 #banner{
 	width: 100%;
@@ -79,9 +103,35 @@ header{
 	margin-right: 100px ;
 	margin-top: 30px;
 }
+@keyframes loginMove{
+	0%{
+		margin-left: 730px;
+	}
+	100%{
+		margin-left: 60px;
+	}
+}
 @media screen and (max-width: 1220px){
 	#loginForm{
+		float: left;
+		animation: loginMove 1.5s forwards;
+	}
+	.banner{
+		background-image: none;
+	}
+	#gift{
+		z-index: 100;
+		animation: chrMove 2s ease-in-out forwards;
+	}
+}
+@media screen and (max-width: 1018px){
+	#gift{
 		display: none;
+	}
+	#loginForm{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-65%);
 	}
 }
 #loginHead{

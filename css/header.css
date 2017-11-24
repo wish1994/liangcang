@@ -13,6 +13,7 @@ a:hover{
 	background: #eeeeee;
 }
 #top #tLeft{
+	float: left;
 	width: 300px;
 	height: 100%;
 	line-height: 30px;
@@ -25,5 +26,73 @@ a:hover{
 	width: 20px;
 	height: 20px;
 	background: url("../img/tel.png") no-repeat;
+}
+
+#tRight{
+	float: right;
+	width: 160px;
+	height: 100%;
+	margin-top: 5px;
+	font-size: 13px;
+}
+#tRight a:hover{
+	color: goldenrod;
+}
+#order{
+	float: right;
+	margin-top: 5px;
+	font-size: 13px;
+	margin-right: 50px;
+}
+#tRight button{
+	border: 1px solid #999999;
+	border-radius: 4px;
+	background: #dddddd;
+	width: 56px;
+	height: 20px;
+	color: #666666;
+}
+#tRight button:hover{
+	background: red;
+	color: white;
+}
+#search-col{
+	padding-top: 15px;
+}
+
+#search-box{
+	position: relative;
+	width: 390px;
+	height: 40px;
+}
+#search{
+	width: 306px;
+	height: 40px;
+	border: 2px solid goldenrod;
+	font-size: 14px;
+}
+#search-box span{
+	display: block;
+	position: absolute;
+	width: 80px;
+	height: 40px;
+	background: goldenrod;
+	color: white;
+	font: 18px/40px simsun,arail;
+	text-align: center;
+	left: 306px;
+	top: 0;
+}
+#search-col .sText{
+	font-size: 13px;
+	color: #999999;
+	margin-right: 20px;
+	cursor: pointer;
+}
+#search-col div:nth-child(2){
+	margin-top: 8px;
+}
+#search-col .sText:hover{
+	color: red;
 }
 

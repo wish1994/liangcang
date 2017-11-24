@@ -1,11 +1,12 @@
 //验证码
+var icode=false;
 $.idcode.setCode();
 $("#Txtidcode").change(function() {
     var r = $.idcode.validateCode();
     if (r == true) {
-        console.log("验证成功！")
+        icode=true;
     } else {
-        console.log("验证失败！")
+        icode=false;
     }
 })
 
@@ -52,21 +53,25 @@ $("#second").blur(function(){
 })
 $("#reg").click(function(){
 	if($(".success").show()&&$('#first').val().length>=6&&$('#first').val().length<=20&&$("#second").val()==$("#first").val()){
-		$.post("http://h6.duchengjiu.top/shop/api_user.php",{"status": "register","username":$('input[name="username"]').val(),"password":$("#first").val()},function(obj){
-			if(obj.code===0){
-				var oDiv=document.createElement("div");
-				$(oDiv).css({position:"fixed",zIndex:"100",top:"40%",left:"40%",width:"200px",height:"100px",background:"rgba(200,0,0,0.8)",color:"white",textAlign:"center",font:"24px/80px arial",borderRadius:"8px"});	
-				$(oDiv).text("注册成功！")
-				document.body.appendChild(oDiv);
-				$(oDiv).animate({"opacity":"0"},1000,"linear");
-				setTimeout(function(){
-					document.body.removeChild(oDiv);			
-				},1000)
-				setTimeout(function(){
-					window.location.href="login.html";
-				},1500)
-			}
-		})
+		if(icode){
+			$.post("http://h6.duchengjiu.top/shop/api_user.php",{"status": "register","username":$('input[name="username"]').val(),"password":$("#first").val()},function(obj){
+				if(obj.code===0){
+					var oDiv=document.createElement("div");
+					$(oDiv).css({position:"fixed",zIndex:"100",top:"40%",left:"40%",width:"200px",height:"100px",background:"rgba(200,0,0,0.8)",color:"white",textAlign:"center",font:"24px/80px arial",borderRadius:"8px"});	
+					$(oDiv).text("注册成功！")
+					document.body.appendChild(oDiv);
+					$(oDiv).animate({"opacity":"0"},1000,"linear");
+					setTimeout(function(){
+						document.body.removeChild(oDiv);			
+					},1000)
+					setTimeout(function(){
+						window.location.href="login.html";
+					},1500)
+				}
+			})
+		}else{
+			alert("请输入正确的验证码");
+		}
 	}else{
 		alert("输入信息有误，请按照提示注册！")
 	}

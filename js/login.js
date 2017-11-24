@@ -22,6 +22,13 @@ $("#login").click(function(){
                     }else{
                         window.location.href = "index.html";
                     }
+                }else{
+                    alert("用户名或密码输入有误！")
                 }          
         });
 })
+window.onload=function(){
+    if(localStorage.token){
+        alert("您已登录，请勿重复登录！")
+    }
+}

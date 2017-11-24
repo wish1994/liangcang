@@ -48,3 +48,47 @@
 //                     $("#goodsList").html(html);
 //                 }
 //             });
+
+$("#order").click(function(){
+    if(localStorage.getItem("token")){
+        window.location.href="order.html"
+    }else{
+        alert("请先登录");
+        window.location.href="login.html"
+    }
+});
+window.onload=function(){
+    if(localStorage.getItem("token")){
+        $("#user").html(localStorage.username+",<button id='clr'>取消登录</button>");
+        $("#user").css({"color":"goldenrod"})
+        $("#clr").click(function(){
+            localStorage.clear();
+            $("#user").get(0).href="header.html";
+            window.location.href="header.html";
+        })
+        $("#zhuce").hide();
+        $("#tRight .shu").hide();
+        $.post("http://h6.duchengjiu.top/shop/api_order.php?token="+localStorage.token,function(obj){
+            if(obj.code===0){
+                var number=obj.data.length;
+                $("#order").text("我的订单（"+number+"）")
+            }
+        })
+    }else{
+        $("#order").text("我的订单")        
+    }
+}
+window.onresize=function(){
+    var windowWidth=document.documentElement.clientWidth;
+    if(windowWidth<660){
+        $("#tel").hide();
+        $("#tLeft .shu").hide();
+        $("#tLeft .tel").hide();
+        $("#tLeft").css({width:"95px"})
+    }else{
+        $("#tel").show();
+        $("#tLeft .shu").show();
+        $("#tLeft .tel").show();
+        $("#tLeft").css({width:"300px"})
+    }
+}
