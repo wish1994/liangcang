@@ -12,6 +12,9 @@ a:hover{
 	height: 30px;
 	background: #eeeeee;
 }
+#logo{
+	vertical-align: top;
+}
 #top #tLeft{
 	float: left;
 	width: 300px;
@@ -61,27 +64,27 @@ a:hover{
 }
 
 #search-box{
-	position: relative;
-	width: 390px;
+	width: 80%;
 	height: 40px;
 }
 #search{
-	width: 306px;
+	float: left;
+	width: 80%;
 	height: 40px;
 	border: 2px solid goldenrod;
 	font-size: 14px;
+	padding-left: 5px;
 }
-#search-box span{
+#search-box #searchBtn{
 	display: block;
-	position: absolute;
-	width: 80px;
+	float: left;
+	width: 20%;
 	height: 40px;
 	background: goldenrod;
 	color: white;
 	font: 18px/40px simsun,arail;
 	text-align: center;
-	left: 306px;
-	top: 0;
+	cursor: pointer;
 }
 #search-col .sText{
 	font-size: 13px;
@@ -96,3 +99,123 @@ a:hover{
 	color: red;
 }
 
+/* 购物车 */
+#cart{
+	width: 140px;
+	height: 38px;
+	line-height: 32px;
+	text-indent: 10px;
+	border: 1px solid #cccccc;
+	box-shadow: 0 0 2px rgba(0,0,0,0.2);
+	margin-left: 100px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+#cartbox{
+	position: absolute;
+	border: 1px solid #dddddd;
+	top: 58px;
+	left: 152px;
+	min-width: 160px;
+	max-width: 200px;
+	min-height: 10px;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+	display: none;
+	z-index: 99;
+	background: white;
+}
+#cart > span{
+	margin-left: 5px;
+}
+#cart span span{
+	color: red;
+}
+#cartbox img{
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+#cartbox img:nth-child(1){
+	margin-top: 5px;
+}
+#cart:hover + #cartbox{
+	display: block;
+}
+#cartbox:hover{
+	display: block;
+}
+#cartbox p{
+	font: 12px yahei,arail;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	columns: #333333;
+}
+
+
+.navagition{
+	text-align: center;
+	background: url("http://www.5lux.com/vendor/images/v30/navi_1pxbg.png") repeat-x;
+	border: none;
+	margin-top: 35px;
+	height: 38px;
+	box-sizing: content-box;
+	text-align: center;
+}
+.navbar{
+	min-height: 38px!important;
+}
+.nav-toggle{
+	display: none;
+}
+.nav-toggle span.glyphicon-menu-hamburger{
+	line-height: 38px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+.navagition .navstyle{
+	height: 38px;
+}
+.navagition .navstyle > li{
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	float: none;
+}
+.navagition .navstyle > li a{
+	line-height: 38px;
+}
+
+@media screen and (min-width: 768px){
+	.navagition .navstyle > li > a:hover{
+		color: white;
+		background-color: transparent;
+	}
+}
+@media screen and (max-width: 768px){
+	.navagition .navstyle > li > a:hover{
+		color: white;
+		background-color: darkorange;
+	}
+}
+.navagition .navstyle > li.nav-current a{
+	background: red;
+	color: white;
+}
+.navagition .navstyle > li.nav-current a:hover{
+	background: red;
+	color: white;
+}
+
+.navagition .navstyle > li > a{
+	color: goldenrod;
+	padding: 0 21px;
+	border-radius: 2px;
+}
+
+
+.navagition .navstyle > li > a:focus{
+	color: rgb(230, 126, 34);
+	background-color: transparent;
+}

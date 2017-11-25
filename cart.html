@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <header></header>
+    <script>
+        $(document).ready(function(){
+            $("header").load("header.html")
+        })    
+    </script>
+    <section class="clear-fix">
+        <div class="container">
+            <div class="row shopHeader">
+                <div class="col-md-4">
+                    <div class="wrap-order active">
+                        <a href="#" class="shoppingCart">
+                            <span class="num">1.</span>
+                            <h3>购物车</h3>
+                            <img src="img/step.gif" alt="" class="step">                            
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrap-order">
+                        <a href="order.html" class="shoppingCart">
+                            <span class="num">2.</span>
+                            <h3>订单信息</h3>
+                            <img src="img/step.gif" alt="" class="step">                
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrap-order">
+                        <a href="#" class="shoppingCart">
+                            <span class="num">3.</span>
+                            <h3>支付</h3>
+                            <i class="rounded-x fa fa-credit-card"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 购物车内容-->
+            <div class="row maycart">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="selectAll"><label for="selectAll">全选</label>
+                            </td>
+                            <td>商品信息</td>
+                            <td>单价（元）</td>
+                            <td>数量</td>
+                            <td>金额（元）</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <input type="button" value="删除选中项" class="btn delSelect">
+            </div>
+
+
+            <!-- 购物车下方 -->
+            <div class="row coupon-code">
+                <div class="col-sm-8">
+                    <p class="subtotal">小计: <span class="subprice">￥ 1270.00</span></p>
+                    <p>运费: <span>你说多少就多少</span></p>
+                    <div class="line"></div>
+                    <p><strong>总价: <span class="total">￥1270.00</span></strong></p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="javascript:;" class="btn after btn">填写订单</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script>
+        $(document).ready(function(){
+            $("footer").load("footer.html")
+        })    
+    </script>
+</body>
+<script src="js/cart.js"></script>
+</html>
