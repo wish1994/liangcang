@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-	<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+	<link rel="stylesheet" type="text/css" href="css/order.css"/>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="js/bootstrap.js"></script>
@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row shopHeader">
                 <div class="col-md-4">
-                    <div class="wrap-order active">
+                    <div class="wrap-order">
                         <a href="#" class="shoppingCart">
                             <span class="num">1.</span>
                             <h3>购物车</h3>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="wrap-order">
+                    <div class="wrap-order  active">
                         <a href="order.html" class="shoppingCart">
                             <span class="num">3.</span>
                             <h3>支付</h3>
@@ -51,26 +51,18 @@
             </div>
 
             <!-- 购物车内容-->
-            <div class="row mycart">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="selectAll"><label for="selectAll">全选</label>
-                            </td>
-                            <td>商品信息</td>
-                            <td>单价（元）</td>
-                            <td>数量</td>
-                            <td>金额（元）</td>
-                            <td>操作</td>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
+            <div class="row myorder">
+                <table class="table">
+                    <div style="margin-bottom:50px">
+                        <input type="checkbox" name="selectAll"><label for="selectAll">全选</label>
+                        <span style="margin-left:80px">你所选中的订单总额：<span id="orderPri" style="color:red">0</span>元</span>
+                        <button id="pay">确定支付</button>
+                    </div>
+                    <tbody id="order-list"></tbody>
                 </table>
-                <input type="button" value="删除选中项" class="btn delSelect">
             </div>
+        </div>
 
-    </section>
     <footer></footer>
     <script>
         $(document).ready(function(){
@@ -78,5 +70,5 @@
         })    
     </script>
 </body>
-<script src="js/cart.js"></script>
+<script src="js/order.js"></script>
 </html>
