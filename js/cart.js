@@ -137,7 +137,7 @@ $(function () {
                 // 获取金额
                 $(".after").click(function () {
                     var sum = $(".subprice").text();
-                    location.href = "address.html?sum=" + sum.substr(1);
+                    location.href = "checkout.html?sum=" + sum.substr(1);
                 })
             }
     

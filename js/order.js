@@ -26,8 +26,11 @@ $.ajax({
 				html += '<div>';
 				html += '<div style="margin-bottom:50px"><input type="checkbox" name="orders"><span>订单号：' + obj.order_id +'</span><span style="margin-left:40px;color:red">订单总额：'+orderT[i]+'元</span></div></div>';
 			}
-			$(".table tbody").html(html);
+			$(".table tbody").html(html);			
 		};
+		$("input[name='orders']").click(function(){
+			changePrice();                	
+		});  
 	}
 });	
 
@@ -46,11 +49,9 @@ function changePrice(){
 		}
 	}
 	$("#orderPri").text(totalPrice);	
-}   
-$("input[name='orders']").eq(1).click(function(){
-	console.log(1);
-	changePrice();                	
-});  
+} 
+
+
 $("#pay").click(function(){
 	alert("您已支付"+$("#orderPri").text()+"元！")
 });

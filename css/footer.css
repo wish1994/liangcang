@@ -109,10 +109,10 @@ a:hover{
 }
 
 #end{
-	padding-top: 215px;
-	height: 400px;
+	padding-top: 165px;
+	height: 350px;
 	background-image: url("../img/footer_bg.jpg");
-	background-position: 0 -200px;
+	background-position: 0 -250px;
 }
 #end .download{
 	height: 44px;

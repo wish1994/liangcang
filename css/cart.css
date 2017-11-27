@@ -57,7 +57,7 @@ section{
 .shopHeader .step{
 	position: absolute;
 	top: 15px;
-	right: 20px;
+	right: 0;
 	width: 80px;
 	height: 40px;
 	padding: 8px;

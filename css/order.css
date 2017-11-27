@@ -4,10 +4,10 @@ a:focus , a:hover{
 }
 
 section{
-	margin: 50px 0;
+	margin: 50px 0 0 0;
 }
 
-/* 购物车上面部分 */
+/* 订单页上面部分 */
 .shopHeader{
 	padding: 20px 0 50px;
 }
@@ -57,7 +57,7 @@ section{
 .shopHeader .step{
 	position: absolute;
 	top: 15px;
-	right: 20px;
+	right: 0;
 	width: 80px;
 	height: 40px;
 	padding: 8px;
