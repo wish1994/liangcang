@@ -5,9 +5,9 @@ $(".toTop").click(function(){
 window.onresize=function(){
     var windowWidth=document.documentElement.clientWidth;
     if(windowWidth<474){
-        $("#address").hide();
+        $("fooetr #address").hide();
     }else{
-        $("#address").show();
+        $("footer #address").show();
     }
     if(windowWidth<340){
         window.resizeTo(340,600);

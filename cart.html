@@ -8,16 +8,77 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="css/cart.css"/>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	<link rel="stylesheet" type="text/css" href="css/header.css"/>
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="js/bootstrap.js"></script>
 </head>
 <body>
-    <header></header>
-    <script>
-        $(document).ready(function(){
-            $("header").load("header.html")
-        })    
-    </script>
+    <header>
+        <div id="top">
+            <div id="tLeft">
+                <span><img src="http://www.5lux.com/vendor/images/v30/home.png" alt="" style="margin-top: -5px;"></span>
+                <span><a href="index.html">来客多首页</span></a>
+                <span style="color:#ccc" class="shu">　|　</span>
+                <span id="tel"></span>
+                <span><a href="index.html" style="font-size:13px" class="tel">贵宾专线：4008-6767-38</span></a>
+            </div>
+            <span><a href="order.html" id="order">我的订单</span></a>
+            <div id="tRight">
+                <span id="user"><a href="login.html" id="user">登录</span></a>
+                <span style="color:#ccc" class="shu">　|　</span>
+                <span><a href="register.html" id="zhuce"><img src="img/youli.gif" style="margin-top:-5px;margin-right:5px">注册</span></a>
+                <span style="color:#ccc" class="shu">　|　</span>            
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <img src="img/logo.png" alt="" style="margin-right:30px;">
+                    <img src="http://www.5lux.com/vendor/images/v30/yijian.jpg" alt="">          
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12" id="search-col">
+                    <div id="search-box">
+                        <input type="text" id="search" placeholder="枕头">
+                        <span id="searchBtn">搜索</span>
+                    </div>
+                    <div>
+                        <span class="sText">太阳镜</span>
+                        <span class="sText">美妆</span>
+                        <span class="sText">数码</span>
+                        <span class="sText">家具</span>
+                        <span class="sText">箱包</span>
+                        <span class="sText">腕表</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div id="cart"><img src="http://www.5lux.com/vendor/images/v30/v30cart.png" alt=""><span>购物车（<span></span>）></span></div>
+                    <div id="cartbox"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-default navagition" role="navigation">
+                    <div class="col-sm-12 " id="nav">
+                        <div class="navbar-header">
+                            <span class="nav-toggle collapsed navbar-brand" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="glyphicon glyphicon-menu-hamburger" aria-expanded="false"  style="font-size:24px"></span>
+                            </span>
+                        </div>
+                        <div class="collapse navbar-collapse" id="main-menu">
+                            <ul class="nav nav-pills navstyle">
+                                <li class="nav-current">
+                                    <a href="index.html">首页</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
     <section class="clear-fix">
         <div class="container">
             <div class="row shopHeader">
@@ -82,14 +143,97 @@
             </div>
         </div>
     </section>
-
-    </section>
-    <footer></footer>
-    <script>
-        $(document).ready(function(){
-            $("footer").load("footer.html")
-        })    
-    </script>
+    <footer>
+        <div id="right-box">
+            <div class="kefu"></div>
+            <div class="weixin"></div>
+            <div class="tel"></div>
+            <div class="toTop"></div>      
+        </div>
+        <div id="footer" class="container-fluid">
+            <div class="row">
+                <a href="index.html" id="logo"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="row row1">
+                <div class="box box1 col-md-3 col-sm-6 col-xs-6">
+                    <div class="pic"></div>
+                    <div>
+                        <p class="chinese">全球精品</p>
+                        <p class="english">Global Selections</p>
+                    </div>
+                </div>
+                <div class="box box2 col-md-3 col-sm-6 col-xs-6">
+                    <div class="pic"></div>
+                    <div>
+                        <p class="chinese">正品保证</p>
+                        <p class="english">Guaranteed</p>
+                    </div>
+                </div>
+                <div class="box box3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="pic"></div>
+                    <div>
+                        <p class="chinese">全场包邮</p>
+                        <p class="english">Free Delivery</p>
+                    </div>
+                </div>
+    
+                <div class="box box4 col-md-3 col-sm-6 col-xs-6">
+                    <div class="pic"></div>
+                    <div>
+                        <p class="chinese">400-897-6336</p>
+                        <p class="english">工作日09:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="end">
+                <div id="detail">
+                    <div class="download">
+                        <div id="text-right">
+                            <p>iPhone</p>
+                            <p>Android</p>  
+                            <p>客户端下载</p>
+                        </div>
+                        <div class="download-code">
+                            <dl class="iPhone">
+                                <dt></dt>
+                                <dd>下载iPhone版</dd>
+                            </dl>
+                            <dl class="android">
+                                <dt></dt>
+                                <dd>下载Android版</dd>
+                            </dl>
+                        </div>
+                        <div id="contact">
+                            <a href="" ><li class="douban"></li></a>
+                            <a href="" ><li class="sina"></li></a>
+                            <a href="" ><li class="weixin"></li></a>
+                        </div>
+                    </div>
+                    <div id="friend">
+                        <div class="friend-link"><a href="">关于来客多</a></div>
+                        <div class="friend-link"><a href="">服务协议</a></div>
+                        <div class="friend-link"><a href="">隐私保护政策</a></div>
+                        <div class="friend-link"><a href="">使用指南</a></div>
+                        <div class="friend-link"><a href="">联系我们</a></div>
+                        <div class="friend-link"><a href="http://www.ucai.cn">加入我们</a></div>
+                        <div class="friend-link"><a href="">友情链接</a></div>
+                        <div class="friend-link"><a href="">私信来客多</a></div>
+                    </div>
+                    <div class="clear-float" id="address">
+                        <p style="margin-top:5px">
+                            <span class="numLeFont">©</span>&nbsp;2017 来客多版权所有&nbsp;浙
+                            <span class="numLeFont">ICP</span>备
+                            <span class="numLeFont">130XXXX</span>号
+                        </p>
+                        <p>&nbsp;&nbsp;公司名称：来客多有限公司&nbsp;&nbsp;电话：0571-********</p>
+                        <p>&nbsp;&nbsp;公司地址：杭州市经济技术开发区.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="js/cart.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
 </html>

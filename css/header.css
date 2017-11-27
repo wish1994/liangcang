@@ -1,28 +1,28 @@
-a{
+header a{
 	text-decoration: none;
 	color: #333333;
 }
-a:hover{
+header a:hover{
 	color: goldenrod;
 	text-decoration: none;
 }
 
-#top{
+header #top{
 	width: 100%;
 	height: 30px;
 	background: #eeeeee;
 }
-#logo{
+header #logo{
 	vertical-align: top;
 }
-#top #tLeft{
+header #top #tLeft{
 	float: left;
 	width: 300px;
 	height: 100%;
 	line-height: 30px;
 	margin-left: 50px;
 }
-#tLeft #tel{
+header #tLeft #tel{
 	display: inline-block;
 	position: relative;
 	top: 5px;
@@ -31,23 +31,23 @@ a:hover{
 	background: url("../img/tel.png") no-repeat;
 }
 
-#tRight{
+header #tRight{
 	float: right;
 	width: 160px;
 	height: 100%;
 	margin-top: 5px;
 	font-size: 13px;
 }
-#tRight a:hover{
+header #tRight a:hover{
 	color: goldenrod;
 }
-#order{
+header #order{
 	float: right;
 	margin-top: 5px;
 	font-size: 13px;
 	margin-right: 50px;
 }
-#tRight button{
+header #tRight button{
 	border: 1px solid #999999;
 	border-radius: 4px;
 	background: #dddddd;
@@ -55,19 +55,19 @@ a:hover{
 	height: 20px;
 	color: #666666;
 }
-#tRight button:hover{
+header #tRight button:hover{
 	background: red;
 	color: white;
 }
-#search-col{
+header #search-col{
 	padding-top: 15px;
 }
 
-#search-box{
+header #search-box{
 	width: 80%;
 	height: 40px;
 }
-#search{
+header #search{
 	float: left;
 	width: 80%;
 	height: 40px;
@@ -75,7 +75,7 @@ a:hover{
 	font-size: 14px;
 	padding-left: 5px;
 }
-#search-box #searchBtn{
+header #search-box #searchBtn{
 	display: block;
 	float: left;
 	width: 20%;
@@ -86,21 +86,21 @@ a:hover{
 	text-align: center;
 	cursor: pointer;
 }
-#search-col .sText{
+header #search-col .sText{
 	font-size: 13px;
 	color: #999999;
 	margin-right: 20px;
 	cursor: pointer;
 }
-#search-col div:nth-child(2){
+header #search-col div:nth-child(2){
 	margin-top: 8px;
 }
-#search-col .sText:hover{
+header #search-col .sText:hover{
 	color: red;
 }
 
 /* 购物车 */
-#cart{
+header #cart{
 	width: 140px;
 	height: 38px;
 	line-height: 32px;
@@ -111,7 +111,7 @@ a:hover{
 	margin-top: 20px;
 	cursor: pointer;
 }
-#cartbox{
+header #cartbox{
 	position: absolute;
 	border: 1px solid #dddddd;
 	top: 58px;
@@ -124,27 +124,27 @@ a:hover{
 	z-index: 99;
 	background: white;
 }
-#cart > span{
+header #cart > span{
 	margin-left: 5px;
 }
-#cart span span{
+header #cart span span{
 	color: red;
 }
-#cartbox img{
+header #cartbox img{
 	width: 50px;
 	height: 50px;
 	margin-left: 10px;
 }
-#cartbox img:nth-child(1){
+header #cartbox img:nth-child(1){
 	margin-top: 5px;
 }
-#cart:hover + #cartbox{
+header #cart:hover + #cartbox{
 	display: block;
 }
-#cartbox:hover{
+header #cartbox:hover{
 	display: block;
 }
-#cartbox p{
+header #cartbox p{
 	font: 12px yahei,arail;
 	white-space: nowrap;
 	overflow: hidden;
@@ -153,7 +153,7 @@ a:hover{
 }
 
 
-.navagition{
+header .navagition{
 	text-align: center;
 	background: url("http://www.5lux.com/vendor/images/v30/navi_1pxbg.png") repeat-x;
 	border: none;
@@ -162,60 +162,60 @@ a:hover{
 	box-sizing: content-box;
 	text-align: center;
 }
-.navbar{
+header .navbar{
 	min-height: 38px!important;
 }
-.nav-toggle{
+header .nav-toggle{
 	display: none;
 }
-.nav-toggle span.glyphicon-menu-hamburger{
+header .nav-toggle span.glyphicon-menu-hamburger{
 	line-height: 38px;
 	position: absolute;
 	top: 0;
 	left: 50%;
 }
-.navagition .navstyle{
+header .navagition .navstyle{
 	height: 38px;
 }
-.navagition .navstyle > li{
+header .navagition .navstyle > li{
 	list-style: none;
 	display: inline-block;
 	position: relative;
 	float: none;
 }
-.navagition .navstyle > li a{
+header .navagition .navstyle > li a{
 	line-height: 38px;
 }
 
 @media screen and (min-width: 768px){
-	.navagition .navstyle > li > a:hover{
+	header .navagition .navstyle > li > a:hover{
 		color: white;
 		background-color: transparent;
 	}
 }
 @media screen and (max-width: 768px){
-	.navagition .navstyle > li > a:hover{
+	header .navagition .navstyle > li > a:hover{
 		color: white;
 		background-color: darkorange;
 	}
 }
-.navagition .navstyle > li.nav-current a{
+header .navagition .navstyle > li.nav-current a{
 	background: red;
 	color: white;
 }
-.navagition .navstyle > li.nav-current a:hover{
+header .navagition .navstyle > li.nav-current a:hover{
 	background: red;
 	color: white;
 }
 
-.navagition .navstyle > li > a{
+header .navagition .navstyle > li > a{
 	color: goldenrod;
 	padding: 0 21px;
 	border-radius: 2px;
 }
 
 
-.navagition .navstyle > li > a:focus{
+header .navagition .navstyle > li > a:focus{
 	color: rgb(230, 126, 34);
 	background-color: transparent;
 }
