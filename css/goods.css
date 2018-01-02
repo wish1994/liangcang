@@ -1,0 +1,369 @@
+/* 页面主题部分的宽度 */
+#Main{
+    width: 1000px;
+    margin:0 auto;
+    position:relative;
+}
+/* 页面上方 的 小字体导航 */
+.nav{
+    width: 100%;
+    height: 20px;
+    line-height:20px;
+}
+/* 导航的字体大小及颜色 */
+.nav span{
+    font-size:12px;
+    color:#bfbfbf;
+    padding:10px 0 5px;
+}
+/* 左边展示的图片窗口大小 */
+#img-box{
+    width: 350px;
+    height:350px;
+    overflow:hidden;
+    position:relative;
+    margin-top:5px;
+}
+#img-box .content{
+    height:350px;
+    width:2000px;
+    font-size:0;
+    position:absolute;
+    left:0;
+}
+/* 图片高度 */
+#img-box img{
+    width: 350px;
+    margin-left:5px;
+}
+/* 下面的图片大小 */
+/* box的大小 */
+.img-list{
+    width:350px;
+    height:80px;
+    position:relative;
+    padding-top:15px;
+}
+/* 图片的大小 */
+.img-list img{
+    width: 63px;
+    height: 63px;
+}
+/* 左右按钮的大小 */
+.img-list .left,.img-list .right{
+    width: 10px;
+    height: 18px;
+    background-size:10px 18px;
+    position:absolute;
+    top:40px;    
+}
+/* 把图片浮动起来 */
+.img-list li{
+    width:63px;
+    height:63px;
+    float:left;
+    margin-right:5px;    
+}
+/* 左侧按钮 */
+.img-list .left{
+    background-image:url("../img/left.png");
+    left:-15px;
+}
+/* 右侧按钮 */
+.img-list .right{
+    background-image:url("../img/right.png");
+    right:-15px;
+}
+/* 设置一个类名控制边框 */
+.img-list .ul-img li.imgborder{
+    border:1px solid #000;
+}
+#You-like{
+    width: 100px;
+    height: 1280px;
+    background-color:rgba(156, 152, 152, 0.5);
+    float:right;
+    margin-right:35px;
+    margin-top:-445px;    
+}
+/*收藏人数  */
+.goodsInfo{
+    width: 330px;
+    height: 493px;
+    float:right;
+    margin-right:40px;
+    margin-top:-445px;
+}
+/* 收藏人数的尺寸 */
+.goodsInfo .box{
+    height: 21px;
+    width: 330px;
+}
+/* 收藏星星 */
+.goodsInfo .heart{
+    width: 14px;
+    height: 13px;
+    display:block;
+    background-size:14px 13px;
+    background-image:url("../img/heart-black.png");
+    margin-top:5px;
+    margin-right:5px;
+}
+.goodsInfo .redheart{
+    width: 14px;
+    height: 13px;
+    display:block;
+    background-size:14px 13px;
+    background-image:url("../img/redheart.png");
+    margin-top:5px;
+    margin-right:5px;
+}
+/* 浮动 */
+.goodsInfo div,.goodsInfo p{
+    float:left;
+}
+/* ZUS */
+.goodsInfo .zus{
+    font-size:24px;
+    color:#878787;
+    display:block;
+    line-height:36px;
+    margin-top:30px;
+}
+/* 产品名字 标题 */
+.goodsInfo .goodName{
+    width: 330px;
+    height: 52px;
+    font-size:20px;
+    line-height:26px;
+}
+/* 价格 尺寸 */
+.goodsInfo .price{
+    width: 330px;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(153,153,153);
+    padding-top: 5px;
+    padding-bottom: 32px;
+}
+/* 价格   */
+.goodsInfo .shipNote{
+    width: 344px;
+    height: 17px;
+    font-size:12px;
+}
+/* 价格 */
+.goodsInfo .number{
+    color: rgb(16,131,255);
+    font-size: 18px;
+    margin-left:5px;
+}
+/* 图标的尺寸大小 */
+.goodsInfo .post-img,.goodsInfo .auth-img{
+    width: 15px;
+    height: 15px;
+    background-size:14px 14px;    
+    float:left;
+}
+/* 图标和文字之间的间隔 */
+.goodsInfo .shipNote .post,.goodsInfo .shipNote .auth-img,.goodsInfo .shipNote .auth{
+    margin-left:5px;
+}
+/* 包邮和授权的图标 */
+.goodsInfo .post-img{
+    background-image:url("../img/post.png");
+}
+.goodsInfo .auth-img{
+    background-image:url("../img/autho.png");
+    margin-left:4px;
+}
+.goodsInfo .shipNote{
+    padding-left:44px;
+}
+/* 包邮 和授权 的字体 颜色 */
+.goodsInfo .shipNote p{
+    line-height:17px;
+    margin-left:4px;
+    color:rgb(153,153,153);
+}
+/* 整个类型的尺寸 */
+.type{
+    width: 330px;
+    height: 132px;
+    margin-top:10px;
+    line-height:22px;
+    position:relative;
+}
+/* 字体的颜色和大小 */
+.type span{
+    font-size:12px;
+    color:rgb(153,153,153);    
+}
+/* 每个型号的长宽 */
+.type ul li{
+    font-size:13px;
+    color:#999;
+    width: 166px;
+    height: 22px;
+    padding:2px 10px;
+    margin-top:1px;
+    line-height:22px;
+    background-color:#dcdcdc;        
+} 
+/* 不同型号的hover  */
+.goodsInfo .type ul li:hover{
+    cursor:pointer;
+} 
+/* 设置一个类名 控制 边框 */
+.type ul li.on{
+    border:1px solid #000;    
+}
+/* 最后一个型号定位到右边 */
+.type ul #last{
+    position:absolute;
+    left:188px;
+    bottom:-1px;
+    width: 122px;
+}
+
+/* 选择多少件 */
+.count{
+    width: 330px;
+    height: 35px;
+    margin-top: 10px;
+    font-size:12px;
+    color:rgb(153,153,153);
+    padding:0 0 10px 0;
+}
+.count .text{
+    line-height:35px;
+}
+.count img.reduce,.count img.plus{
+    width: 13px;
+    height: 13px;
+    margin-top:22px;
+}
+.count img.reduce{
+    margin-left:10px;
+}
+.count input{
+    width:54px;    
+    height:26px;
+    display:inline-block;
+    text-align:center;
+    line-height:26px;
+    border: 1px solid rgb(238,238,238);
+    margin:16px 7px 0 7px;
+}
+/* 点击购买 */
+.buy-box{
+    width: 330px;
+    height: 42px;
+    margin-top:15px;
+}
+/* 点击购买的尺寸颜色 字体大小 */
+.buy{
+    width: 330px;
+    height: 42px;
+    background-color:#000;
+    font-size:18px;
+    text-align:center;
+    line-height:42px;
+    color:#fff;
+}
+/* 点击加入购物车 */
+.shop-share,.shop-car{
+    width: 160px;
+    height: 34px;
+    display:inline-block;
+    border:1px solid #000;
+    margin-top:10px;
+    font-size:13px;
+    color:#000;
+    line-height:34px;
+    text-align:center;
+    cursor: pointer;
+}
+/* 加购 和 分享 的 图标大小 */
+.shop-share img,.shop-car img{
+    height:15px;
+}
+/* 分享和加购间距 */
+.shop-share{
+    margin-left:6px;
+} 
+
+/* 下面的简介 */
+#abstract{
+    width: 720px;
+    margin-top:56px;
+
+}
+#abstract div,#abstract img{
+    width: 720px;
+}
+.brand-box,.shop-box{
+    height:24px;
+    width:1000px;
+    margin-top:30px;        
+}
+img.brand-img,img.guide-img{
+    width:23px;
+    height:24px;
+    float:left;    
+}
+p.brand-title,p.guide-title{
+    color:rgb(38,38,38);
+    font-size:17px;
+    line-height:24px;
+    float:left;
+    margin-left:2px;
+}
+p.brand-content{
+    font-size:13px;
+    color:rgb(51,51,51);
+    width:700px;
+    height:48px;
+    margin-top:20px;
+    line-height:2;
+}
+.guide-box{
+    width: 1000px;
+    height: 119px;
+    margin-top:20px;
+    color:rgb(53,53,53);
+}
+p.shop-guide{
+    font-size:13px;
+    line-height:32px;
+}
+
+.customer{
+    width: 100px;
+    height: 28px;
+    border:1px solid #000;
+    margin-top:20px;
+    position:relative;
+}
+.customer p.p{
+    line-height:28px;
+    text-align:center;
+    color:#555;
+    font-weight:bold;
+    font-size:14px;
+}
+p.customer-text{
+    width: 592px;
+    color:rgb(102,102,102);
+    font-size:12px;
+    background-color:#fff;
+    border:3px solid #efedeb;
+    padding:24px 30px;
+    position:relative;
+    top:-365px;
+    left:-2px;
+    display:none;
+}
+.customer:hover .customer{
+    display:block;
+} 

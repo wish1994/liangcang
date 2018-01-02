@@ -1,0 +1,473 @@
+/* 整个页面大框架*/
+#Main{
+	width:1000px;
+	margin:0 auto;
+	/*background-color:#f00;*/
+}
+
+
+/*SHOP 商店*/
+#Shop-title{
+	height:47px;
+	background-image:url("../img/2.png");
+	background-position:center -532px;
+	background-repeat:no-repeat;
+	margin:40px 40px;
+}
+/* 全场包邮*/
+#Shop-title .postage{
+	display:block;
+	height:40px;
+	width:188px;
+	background-image:url("../img/2.png");
+	background-position:0 -739px;
+}
+
+/* Banner尺寸 */
+#Banner{
+	width:1000px;
+	height:475px;
+	overflow:hidden;
+}
+/* Banner 图片的尺寸 */
+#Banner img{
+	width: 1000px;
+}
+
+
+/* 产品的种类名字 宽高居中*/
+#Cls{
+	width: 1000px;
+	height: 139px;
+	margin:5px 0 10px 0;
+}
+/* 产品所占的尺寸*/
+#Cls .cls{
+	width: 840px;
+	height: 139px;
+}
+/* 把字体浮动 下边框 定位 排列好 */
+#Cls .cls li{
+	float:left;
+	display:block;
+	position:relative;
+	font-size:14px;
+	height:25px;
+	border-bottom:1px solid #ededed;
+	padding:6px 20px 5px 0;
+	margin:10px 0 -1px 0;
+	text-align:center;
+	vertical-align:middle;
+}
+/* 去除左后一条Li的边框 */
+#Cls .last{
+	border-style:none;
+}
+
+/* 设置字体颜色 居中 */
+#Cls .cls a{
+	width: 64px;
+	color:#000;
+	text-align:center;
+	display:block;
+	height:24px;
+	line-height:24px;
+}
+#Cls ul{
+	border-bottom:1px solid #ededed;
+	float:left;
+}
+
+
+
+/* 右边的价格下拉菜单 */
+#Cls .price{
+	width: 160px;
+	height: 37px;
+	border-bottom:1px solid #ededed;
+	position:relative;
+	cursor:pointer;
+	float:right;
+	font-size:14px;
+	margin-top:9px;
+}
+/* 价格下拉菜单右边的三角形 */
+#Cls .box{
+	width: 12px;
+	height: 20px;
+	background-color:#fafdfe;
+	float:right;	
+	margin-top:10px;
+}
+#Cls .box .angle{
+	width:0;
+	height:2px;
+	border-color:#000 #fafdfe #fafdfe #fafdfe;
+	border-style:solid;
+	border-width:6px;
+	margin-top:5px;
+}
+/* 价格筛选字体  */
+#Cls .price .text{
+	display:block;
+	float:right;
+	margin-right:2px;
+	line-height:37px;
+}
+/* 价格 */
+#Cls .select-price{
+	display:none;
+	width: 95px;
+	position: absolute;
+	background-color:#fff;
+	right: 0;
+	top:36px;
+	border: 1px solid #efedeb;
+	z-index:100;
+}
+/* 设置价格下拉菜单边框  */
+#Cls .select-price li{
+	width: 95px;
+	line-height:39px;
+	text-indent:1em;
+	border-bottom:1px solid #efedeb;
+}
+/* 设置第一条 “全部” 的 背景 和字体颜色 */
+#Cls .select-price .all{
+	width: 95px;
+	background-color:#333434;
+	color:#fff;
+}
+
+
+#Cls .cls .last{
+	border-width:0;
+}
+
+/* 具体的产品 五排*/
+.lis1,.lis2{
+	width: 1000px;
+	height: 490px;
+	margin:10px 0;
+	margin-top:20px;
+	position:relative;
+}
+/* 第一排 */
+/* 设置第一排 第一张图片的大小 */
+#ShopList1 .item1{
+	width: 490px;
+	height: 490px;
+	float:left;	
+}
+/* 设置图片的 第一排 后面四张图片大小 */
+#ShopList1 .item2,#ShopList1 .item3,#ShopList1 .item4,#ShopList1 .item5{
+	width: 235px;
+	height: 235px;
+	float:left;
+	margin-left:20px;
+}
+/* 设置每张图片的间隙 */
+#ShopList1 .item4,#ShopList1 .item5{
+	margin-top:20px;
+}
+/* 设置图片尺寸 #Sh*/
+#ShopList1 img,#ShopList2 img{
+	width: 235px;
+	height: 235px;
+}
+#ShopList1 .first,#ShopList2 .first{
+	width: 490px;
+	height: 490px;
+}
+/* 鼠标经过时 */
+#ShopList1 .goodsInfo{
+	display:none;
+}
+
+/* 第二排 */
+#ShopList2 .item1,#ShopList2 .item2,#ShopList2 .item3,#ShopList2 .item4{
+	width: 235px;
+	height: 235px;
+	position:relative;
+	position:absolute;
+}
+#ShopList2 .item5{
+	width: 490px;
+	height: 490px;
+	position:absolute;
+	right:0;
+	top:0;
+}
+#ShopList2 .item1{
+	top:0;
+}
+#ShopList2 .item2{
+	left:255px;
+	top:0;
+}
+#ShopList2 .item3{
+	left:0;
+	bottom:0;	
+}
+#ShopList2 .item4{
+	left:255px;
+	bottom:0;	
+}
+
+/* 第三排 */
+
+/* 设置第三排 第一张图片的大小 */
+#ShopList3 .item1{
+	width: 490px;
+	height: 490px;
+	float:left;	
+}
+/* 设置图片的 第一排 后面四张图片大小 */
+#ShopList3 .item2,#ShopList3 .item3,#ShopList3 .item4,#ShopList3 .item5{
+	width: 235px;
+	height: 235px;
+	float:left;
+	margin-left:20px;
+}
+/* 设置每张图片的间隙 */
+#ShopList3 .item4,#ShopList3 .item5{
+	margin-top:20px;
+}
+/* 设置图片尺寸 #Sh*/
+#ShopList3 img,#ShopList3 img{
+	width: 235px;
+	height: 235px;
+}
+#ShopList3 .first,#ShopList2 .first{
+	width: 490px;
+	height: 490px;
+}
+
+/* 第四排 */
+#ShopList4 img{
+	width: 235px;
+	height: 235px;
+}
+#ShopList4 .first{
+	width: 490px;
+	height: 490px;
+}
+
+#ShopList4 .item1,#ShopList4 .item2,#ShopList4 .item3,#ShopList4 .item4{
+	width: 235px;
+	height: 235px;
+	position:absolute;
+}
+#ShopList4 .item5{
+	position:absolute;
+	width: 490px;
+	height: 490px;
+	right:0;
+	top:0;
+}
+#ShopList4 .item2{
+	left:255px;
+	top:0;
+}
+#ShopList4 .item3{
+	left:0;
+	top:255px;
+}
+#ShopList4 .item4{
+	left:255px;
+	top:255px;
+}
+
+/* 第五排 */
+#ShopList5 .item{
+	width: 235px;
+	height: 235px;
+	float:left;
+	margin-left:20px;
+}
+#ShopList5 .item1{
+	width: 490px;
+	height: 490px;
+	margin-left:0;
+}
+#ShopList5 img{
+	width: 235px;
+	height: 235px;
+}
+#ShopList5 .first{
+	width: 490px;
+	height: 490px;
+}
+#ShopList5 .item4,#ShopList5 .item5{
+	margin-top:20px;
+}
+
+
+/* 每个图片的hover事件 */
+.shoplist .logo{
+	width: 42px;
+	height: 42px;
+	background-size:42px;
+	background-image:url("../img/slogo.png");
+	float:left;
+	margin-right:10px;
+	/* margin-left:55px;	 */
+}
+/* hover 时显示简介信息 */
+.shoplist .goodsInfo1{
+	width: 490px;
+	height: 490px;
+	background-color:#474947;
+	position:absolute;
+	top:0;
+	left:0;
+	text-align:center;		
+	display:none;
+}
+.shoplist .goodsInfo1 .a{
+	height:42px;
+	width: 100px;
+	margin:0 auto;
+	margin-top:134px;
+}
+.shoplist .goodsInfo1 .text{
+	float:left;
+	height:42px;
+	line-height:42px;
+	color:#fff;
+}
+.shoplist .doll1{
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:#333;
+	font-style: italic;
+	color:#0c6eba;
+	margin:14px 0 0 -35px;
+}
+.shoplist .til{
+	margin-top:23px;
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+}
+.shoplist .content{
+	font-size:12px;
+	margin-top:5px;
+	width:300px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	color:#fff;	
+	margin:5px auto 0 auto;
+	line-height:20px;
+}
+/* 大图片  */
+.shoplist .item1:hover .goodsInfo1{
+	display:block;
+}
+#ShopList2 .item5:hover .goodsInfo1{
+	display:block;
+}
+#ShopList4 .item5:hover .goodsInfo1{
+	display:block;
+}
+
+
+/* 小图片 */
+
+.lis1 .item2 .goodsInfo1,.lis1 .item3 .goodsInfo1,.lis1 .item4 .goodsInfo1,.lis1 .item5 .goodsInfo1,
+.lis2 .item1 .goodsInfo1,.lis2 .item2 .goodsInfo1,.lis2 .item3 .goodsInfo1,.lis2 .item4 .goodsInfo1{
+	width: 235px;
+	height: 235px;
+	display:none;
+	background-color:#474947;
+	position:absolute;
+}
+.lis1 .item2 .goodsInfo1{
+	left:510px;
+}
+.lis1 .item3 .goodsInfo1{
+	left:765px;
+}
+.lis1 .item4 .goodsInfo1{
+	left:510px;
+	top:255px;
+}
+.lis1 .item5 .goodsInfo1{
+	left:765px;
+	top:255px;
+}
+.lis2 .item1,.goodsInfo1{
+	left:0;
+	top:0;
+}
+.lis2 .item2,.goodsInfo1{
+	left:255px;
+	top:0;
+}
+.lis2 .item3,.goodsInfo1{
+	left:0;
+	top:255px;
+}
+.lis2 .item4,.goodsInfo1{
+	left:255px;
+	top:255px;
+}
+.lis1 .item2 .a,.lis1 .item3 .a,.lis1 .item4 .a,.lis1 .item5 .a,
+.lis2 .item1 .a,.lis2 .item2 .a,.lis2 .item3 .a,.lis2 .item4 .a{
+	margin:0 auto;
+	margin-top:24px;
+	text-align:center;
+}
+.lis2 .item1 .logo,.lis2 .item2 .logo,.lis2 .item3 .logo,.lis2 .item4 .logo{
+	width: 42px;
+	height: 42px;
+	font-size:14px;
+	background-image:url("../img/slogo.png");
+	display:inline-block;
+	line-height:42px;
+	margin-left:10px;
+}
+.lis1 .item2 .content,.lis1 .item3 .content,.lis1 .item4 .content,.lis1 .item5 .content,
+.lis2 .item1 .content,.lis2 .item2 .content,.lis2 .item3 .content,.lis2 .item4 .content{
+	width: 200px;
+	height: 50px;
+}
+.lis1 .item2:hover .goodsInfo1,.lis1 .item3:hover .goodsInfo1,
+.lis1 .item4:hover .goodsInfo1,.lis1 .item5:hover .goodsInfo1,
+.lis2 .item1:hover .goodsInfo1,.lis2 .item2:hover .goodsInfo1,
+.lis2 .item3:hover .goodsInfo1,.lis2 .item4:hover .goodsInfo1{
+	display:block;
+}
+/* More 尺寸 背景颜色*/
+#More{
+	width: 148px;
+	height: 50px;
+	margin:90px auto 0 auto;
+	cursor:pointer;
+	text-align:center;
+	border:3px solid #000;
+}
+/* 字体大小颜色 居中 */
+#More span{
+	font-weight:bold;
+	line-height:50px;
+	font-size:20px;
+	font-family:sans-serif;
+}
+/* More hover事件  背景颜色黑色,字体白色 */
+#More:hover{
+	background-color:#000;
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+
+

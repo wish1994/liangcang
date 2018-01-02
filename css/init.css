@@ -1,0 +1,21 @@
+/*初始化*/
+*{
+	padding: 0;
+	margin: 0;
+}
+.clear-margin::before , .clear-margin:before{
+	content: "";
+	display: block;
+	overflow: hidden;
+}
+.clear-float::after , .clear-float:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}

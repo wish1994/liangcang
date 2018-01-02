@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>良仓，生活美学平台</title>
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+<body>
+    <div id="header" style="z-index:100"></div>
+    <script>
+        $(document).ready(function(){
+            $("#header").load("header.html")
+        })    
+    </script>
+    <div id="Banner" style="margin-top:150px">
+        <ul id="img">
+            <li>
+                <a href=""><img src="http://imgs-qn.iliangcang.com/ware/slider/1104.jpg?t=1509065596" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="http://imgs-qn.iliangcang.com/ware/slider/1097.jpg?t=1508895835" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="http://imgs-qn.iliangcang.com/ware/slider/1105.jpg" alt=""></a>                    
+            </li>
+            <li>
+                <a href=""><img src="http://imgs-qn.iliangcang.com/ware/slider/1103.png" alt=""></a>                                        
+            </li>
+            <li>
+                <a href=""><img src="http://imgs-qn.iliangcang.com/ware/slider/1101.png" alt=""></a>              
+            </li>
+            <li>
+                <a href=""><img src="http://imgs-qn.iliangcang.com/ware/slider/1104.jpg?t=1509065596" alt=""></a>
+            </li>
+        </ul>
+        <div id="LeftBtn" class="bannerBtn">
+            <img src="http://imgs-qn.iliangcang.com/images/default/normal_right.png" alt="">
+        </div>
+        <div id="RightBtn" class="bannerBtn">
+            <img src="http://imgs-qn.iliangcang.com/images/default/normal_left.png" alt="">
+        </div>
+    </div>
+    <div id="bLine">
+        <ul>
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>        
+    </div>
+    <div id="Goods">
+        <div class="left">
+            <a href="">
+                <img src="http://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/28/28809.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="http://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/28/28810.jpg" alt="">
+            </a>
+        </div>
+        <div class="middle">
+            <a href="">
+                <img src="http://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/28/28808.jpg" alt="">
+            </a>
+        </div>
+        <div class="right">
+            <a href="">
+                <img id="r1" src="http://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/28/28807.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="http://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/28/28779.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div id="Popular">
+        人气良品
+    </div>
+    <div id="GoodShow"></div>
+    <a href="shop.html"><div id="more">MORE</div></a>
+    <div id="footer"></div>
+    <script>
+        $(document).ready(function(){
+            $("#footer").load("footer.html")
+        }) 
+    </script>
+    
+</body>
+<script src="js/index.js"></script>
+<script src="js/header.js"></script>
+</html>

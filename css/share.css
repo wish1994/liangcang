@@ -1,0 +1,148 @@
+#share{
+	width: 1000px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #bbbbbb;
+	font-size: 12px;
+}
+#share a{
+	color: #666666;
+}
+#Hot{
+	width: 1000px;
+	height: 348px;
+	margin: auto;
+	overflow: hidden;
+}
+#Hot  li{
+	margin-right: 38px;
+	width: 308px;
+	height: 348px;
+	float: left;
+}
+
+#Hot .grey{
+	background: linear-gradient(#ffffff,#dddddd);
+	height: 30px;
+	color: #aaaaaa;
+	font-size: 13px;
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+#Hot .grey *{
+	line-height: 30px;
+	margin-right: 8px;
+}
+
+#Hot .text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,0.4),13%,rgba(0,0,0,0.1),13%, rgba(0,0,0,0.1));
+	opacity: 0;
+	z-index: 10;
+}
+#Hot .text:hover{
+	opacity: 1;
+}
+
+#Hot .text span{
+	font: 18px/40px arail;
+}
+#Hot .text .goodName{
+	position: absolute;
+	width: 200px;
+	height: 20px;
+	top: 50%;
+	left: 60px;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#Option{
+	width: 1000px;
+	height: 25px;
+	text-align: left;
+	margin: auto;
+	font-size: 12px;
+	margin-top: 35px;
+	border-bottom: 1px solid #bbbbbb;
+}
+#Option *{
+	color: #666666;
+}
+#Option p{
+	color: white;
+	margin-top: 11px;
+}
+#Goods{
+	width: 1000px;
+	height: 2000px;
+	margin: auto;
+}
+#Goods li{
+	float: left;
+	width: 238px;
+	height: 270px;
+	margin-right: 16px;
+	margin-top: 15px;
+}
+
+#Goods .author{
+	width: 100%;
+	height: 35px;
+	background: linear-gradient(#ffffff,#dddddd);
+	color: #666666;
+	font-size: 12px;
+}
+.author span{
+	position: relative;
+	top: -10px;
+}
+.author *{
+	margin-right: 8px;
+}
+
+#Page{
+	width: 1000px;
+	height: 20px;
+	margin: auto;
+	margin-top: 50px;
+}
+#pageBox{
+	width: 450px;
+	height: 20px;
+	float: right;
+}
+#pageBox{
+	color: #666666;
+	font-size: 12px;
+	margin-bottom: 80px;
+}
+#pageBox *{
+	color: #666666;
+	font-size: 12px;
+	margin-left: 10px;
+}
+#pageBox span{
+	display: inline-block;
+	text-align: center;
+	width: 15px;
+	height: 15px;
+	margin-left: 0;
+}
+#pageBox span:hover{
+	background: #cccccc;
+	color: #ffffff;
+}
+#pageBox .current *{
+	background: #98b5d5;
+	color: white;
+}

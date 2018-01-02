@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>达人.良仓 - 生活美学指南</title>
+    <link rel="shortcut icon" href="http://7q5ckq.com1.z0.glb.clouddn.com/static/favicon.ico" type="image/x-icon" />    
+    <link rel="stylesheet" href="./css/init.css">
+    <link rel="stylesheet" href="./css/daren.css">
+    <script src="./js/jquery-3.2.1.js"></script>
+</head>
+<body>
+    
+    <div id="Main">
+        <div id="header" style="z-index:100"></div>
+        <script>
+            $(document).ready(function(){
+                $("#header").load("header.html")
+            })    
+        </script>
+        <div class="displayStyle" style="margin-top:150px">
+
+            <a href=""><div class="scan"></div></a>
+            <a href=''><div class="list"></div></a>
+            
+            <div class="right-text">
+                <a href=""><span>最多推荐</span></a>
+                <img src="" alt="">
+                <i>|</i>
+
+                <a href=""><span>最受欢迎</span></a>
+                <img src="" alt="">
+                <i>|</i>
+
+                <a href=""><span>最新链接</span></a>
+                <img src="" alt="">                
+                <i>|</i>
+
+                <a href=""><span>最新加入</span></a>
+                <img src="" alt="">                
+            </div>
+        </div>
+
+        <div id="GoodsList" class="clear-margin">
+        </div>
+
+        <div class="paper">
+            <a href="" class="checked">
+                <p class="first">1</p>
+            </a>
+            <a href="">
+                <p>2</p>
+            </a>
+            <a href="">
+                <p>3</p>
+            </a>
+            <a href="">
+                <p>4</p>
+            </a>
+            <a href="">
+                <p>5</p>
+            </a>
+            <a href="">
+                <p>6</p>
+            </a>
+            <a href="">
+                <p>7</p>
+            </a>
+            <a href="">
+                <p>8</p>
+            </a>
+            <a href="">
+                <p>9</p>
+            </a>
+            <a href="">
+                <button>下一页 </button>
+            </a>
+            <p>| 跳转到</p>
+            <input type="text" value="1"/>
+            <p> 页</p>
+            <p class="last">确认</p>
+      
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+        $(document).ready(function(){
+            $("#footer").load("footer.html")
+        }) 
+    </script>
+    
+    <script src="./js/daren.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

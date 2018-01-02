@@ -1,131 +1,44 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>欢迎登录来客多</title>
-	</head>
-	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-	<link rel="stylesheet" type="text/css" href="css/footer.css"/>	
-	<link rel="stylesheet" type="text/css" href="css/login.css"/>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-	<script src="js/jquery-3.2.1.js"></script>
-	<body>
-		<header>
-			<div id="header">
-				<span><a href="index.html"><img src="img/logo.png" id="logo"/></a></span>
-				<span id="headLine"></span>
-				<span id="duolai">好商城，当然要多来</span>
-				<span id="regtel"><img src="http://www.5lux.com/vendor/images/5lux/login/new/phone-logo.png" alt="" />客服电话：110-011-101-1100</span>
-			</div>			
-		</header>
-		<div id="gift"><img src="img/chr.png" alt=""></div>
-		<div id="banner">
-			<div class="banner">
-				<div id="loginForm">
-					<p id="loginHead">登录来客多</p>
-				    <p>
-						<input type="text" name="username" placeholder="请输入用户名"/>
-					</p>
-					<input type="password" name="password" placeholder="请输入密码"/>
-					<p><button id="login">立即登录</button></p>
-                    <a href="register.html" id="tiaozhuan">立即注册>></a>
-                    <a href="index.html" id="goIndex">前往首页<span>>></span></a>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<div id="right-box">
-				<div class="kefu"></div>
-				<div class="weixin"></div>
-				<div class="tel"></div>
-				<div class="toTop"></div>      
-			</div>
-			<div id="footer" class="container-fluid">
-				<div class="row">
-					<a href="index.html" id="logo"><img src="img/logo.png" alt=""></a>
-				</div>
-				<div class="row row1">
-					<div class="box box1 col-md-3 col-sm-6 col-xs-6">
-						<div class="pic"></div>
-						<div>
-							<p class="chinese">全球精品</p>
-							<p class="english">Global Selections</p>
-						</div>
-					</div>
-					<div class="box box2 col-md-3 col-sm-6 col-xs-6">
-						<div class="pic"></div>
-						<div>
-							<p class="chinese">正品保证</p>
-							<p class="english">Guaranteed</p>
-						</div>
-					</div>
-					<div class="box box3 col-md-3 col-sm-6 col-xs-6">
-						<div class="pic"></div>
-						<div>
-							<p class="chinese">全场包邮</p>
-							<p class="english">Free Delivery</p>
-						</div>
-					</div>
-		
-					<div class="box box4 col-md-3 col-sm-6 col-xs-6">
-						<div class="pic"></div>
-						<div>
-							<p class="chinese">400-897-6336</p>
-							<p class="english">工作日09:00-18:00</p>
-						</div>
-					</div>
-				</div>
-				<div class="row" id="end">
-					<div id="detail">
-						<div class="download">
-							<div id="text-right">
-								<p>iPhone</p>
-								<p>Android</p>  
-								<p>客户端下载</p>
-							</div>
-							<div class="download-code">
-								<dl class="iPhone">
-									<dt></dt>
-									<dd>下载iPhone版</dd>
-								</dl>
-								<dl class="android">
-									<dt></dt>
-									<dd>下载Android版</dd>
-								</dl>
-							</div>
-							<div id="contact">
-								<a href="" ><li class="douban"></li></a>
-								<a href="" ><li class="sina"></li></a>
-								<a href="" ><li class="weixin"></li></a>
-							</div>
-						</div>
-						<div id="friend">
-							<div class="friend-link"><a href="">关于来客多</a></div>
-							<div class="friend-link"><a href="">服务协议</a></div>
-							<div class="friend-link"><a href="">隐私保护政策</a></div>
-							<div class="friend-link"><a href="">使用指南</a></div>
-							<div class="friend-link"><a href="">联系我们</a></div>
-							<div class="friend-link"><a href="http://www.ucai.cn">加入我们</a></div>
-							<div class="friend-link"><a href="">友情链接</a></div>
-							<div class="friend-link"><a href="">私信来客多</a></div>
-						</div>
-						<div class="clear-float" id="address">
-							<p style="margin-top:5px">
-								<span class="numLeFont">©</span>&nbsp;2017 来客多版权所有&nbsp;浙
-								<span class="numLeFont">ICP</span>备
-								<span class="numLeFont">130XXXX</span>号
-							</p>
-							<p>&nbsp;&nbsp;公司名称：来客多有限公司&nbsp;&nbsp;电话：0571-********</p>
-							<p>&nbsp;&nbsp;公司地址：杭州市经济技术开发区.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-			
-	</body>
-	<script src="js/animate-2.0.1.js"></script>
-	<script src="js/login.js"></script>
-	<script src="js/footer.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+</head>
+<body>
+    <div id="box">
+        <img id="logo" src="http://www.iliangcang.com/images/default/logo_icon.png" alt="">
+        <div id="user">
+            <img src="http://imgs-qn.iliangcang.com/images/default/usericon.png" alt="">
+            <div class="shu"></div>
+            <input type="text" id="userInp" class="Input" value="用户名/邮箱/手机号">
+        </div>
+        <div id="password">
+            <img src="http://imgs-qn.iliangcang.com/images/default/passicon.png" alt="">
+            <div class="shu"></div>
+            <input type="password" id="passInp" class="Input" value="请输入密码">            
+        </div>
+        <div id="wangji">
+            <input type="checkbox" style="float:left;margin-top:2px">
+            <span style="float:left">自动登录</span>            
+            <a href="" style="color:white; float:right">忘记密码?</a>
+        </div>
+        <div id="login">登录良仓</div>
+        <div id="other">
+            <img src="http://imgs-qn.iliangcang.com/images/default/qqnormal.png" alt="" id="qq">
+            <img src="http://imgs-qn.iliangcang.com/images/default/xinlangnormal.png" alt="" id="xinlang">
+            <img src="http://imgs-qn.iliangcang.com/images/default/doubannormal.png" alt="" id="douban">
+            <img src="http://imgs-qn.iliangcang.com/images/default/tengxunnormal.png" alt="" id="tengxun">
+            <div style="float:right"><a href="reg.html" style="color:white;font-size:14px">注册良仓</a></div> 
+        </div>
+
+    </div>
+    
+</body>
+<script src="js/login.js"></script>
 </html>

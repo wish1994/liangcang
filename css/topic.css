@@ -1,0 +1,179 @@
+/*初始化*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #878787;
+}
+html{
+    overflow-x: hidden;
+}
+/*杂志页样式*/
+
+#main{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 0;
+
+}
+
+#main .tp-title{
+    text-align: center;
+    margin-top: 24px;
+    font-weight: bold;
+    color: #333;
+    vertical-align: bottom;
+}
+
+#main .tp-title .xp50{
+    font-size: 50px;
+    font-style: italic;
+    font-family: Arial;
+}
+
+#main .tp-title .xp20{
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+#main .tp-menu{
+    margin-top: 40px;
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    float: left;
+}
+
+#main .tp-menu li{
+    height: 25px;
+    margin-right: 40px;
+    float: left;
+    display: block;
+    zoom: 1;
+    position: relative;   
+}
+#main .tp-menu li:nth-child(11) {
+    margin-right: 0;
+}
+#main .tp-menu li a{
+    height: 24px;
+    color: #333;
+    padding: 0px 8px;
+    display: block;
+    zoom: 1;
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+#main #tp-line{
+    width: 64px;
+    height: 2px;
+    border-bottom: #333 1px solid;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    left: 0;
+    overflow: hidden;
+}
+
+#main .tp-container{
+    width: 100%;
+}
+
+#main .tp-container li{
+    width: 318px;
+    height: 250px;
+    margin: 25px 0px 0px 23px;
+    float: left;
+}
+
+#main .tp-container li.firstLi{
+    margin-left: 0px;
+}
+
+#main .tp-container .imgicon,#main .tp-container .imgicon img{
+    width: 318px;
+    height: 190px;
+}
+
+#main .tp-container li p{
+    color: #333;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 9px 40px 0px 40px;
+}
+
+#main .tp-container a{
+    color: #333333;
+}
+#main .tp-container .xp20{
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 16px;
+    padding: 15px 30px 0;
+}
+
+#pager {
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    vertical-align: middle;
+    margin-top: 0;
+    padding-top: 40px;
+    color: #4f4f4f;
+    font-size: 12px;
+}
+
+#pager a {
+    
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+    vertical-align: middle;
+}
+
+
+#pager a:hover {
+    background: #cccccc;
+    color: #fff;
+}
+
+#pager a.checked {
+    background: #98B5D5;
+    color: #fff;
+}
+
+#pager input.next {
+    width: 61px;
+    height: 19px;
+    background: url("../img/icon.png") no-repeat;
+    background-position: -23px -599px;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    resize: none;
+    outline: none;
+}
+
+#pager .goPage {
+    border: 1px solid #98B5D5;
+    width: 19px;
+    width: 24px;
+}
+
+#pager input.confirmBtn {
+    width: 41px;
+    height: 19px;
+    background: url("../img/icon.png") no-repeat;
+    background-position: -85px -581px;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    resize: none;
+    outline: none;
+}

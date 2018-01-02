@@ -1,207 +1,75 @@
 body{
-	background: #f9f9f9;
+	background: #999999;
 }
-/* 头部样式 */
-header{
-	width: 100%;
-	height: 100px;
-}
-#header{
-	width: 80%;
-	height: 100%;
+#box{
+	width: 304px;
+	height: 386px;
 	margin: auto;
-}
-#header #logo{
-	height: 100px;
-	width: 270px;
-}
-#header #headLine{
-	display: inline-block;
-	width: 2px;
-	height: 60px;
-	background: orange;
-	margin-bottom: 20px ;
-	margin-left: 20px;
-}
-#header #duolai{
-	font: italic bold 20px/50px heiti,arail;
-	width: 190px;
-	position: absolute;
-	color: red;
-	top: 28px;
-	margin-left: 20px;
-}
-@media screen and (max-width:580px ){
-	#duolai , #header #headLine{
-		display: none;
-	}
-	#header #logo{
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-}
-#header #regtel{
-	float: right;
-	margin-right: 40px;
-	margin-top: 40px;
-	font-size: 18px;
-	line-height: 25px;
-	color: grey;
-}	
-#regtel img{
-	margin-right: 10px;
-	width: 25px;
-}
-@media screen and (max-width:1020px ){
-	#regtel{
-		display: none;
-	}
-}
-#gift{
-	position: absolute;
-	top: -300px;
-	left: 500px;
-}
-@keyframes chrMove{
-	0%{
-		top: -300px;
-	}
-	50%{
-		top: 200px;
-	}
-	75%{
-		top: 150px;
-	}
-	100%{
-		top: 200px;
-	}
-}
-/* banner部分 */
-#banner{
-	width: 100%;
-	height: 500px;
-	background: #262626;
-}
-.banner{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	margin: auto;
-	background: url("http://www.5lux.com/vendor/images/5lux/login/new/login_background1.jpg") no-repeat;
-	background-position: 0 -40px;
-}
-
-/* 注册部分 */
-#loginForm{
-	width: 400px;
-	height: 450px;
-	float: right;
-	background: white;
-	border-radius: 8px;
-	box-shadow: 2px 4px 4px #aaaaaa;
-	margin-right: 100px ;
-	margin-top: 30px;
-}
-@keyframes loginMove{
-	0%{
-		margin-left: 730px;
-	}
-	100%{
-		margin-left: 60px;
-	}
-}
-@media screen and (max-width: 1220px){
-	#loginForm{
-		float: left;
-		animation: loginMove 1.5s forwards;
-	}
-	.banner{
-		background-image: none;
-	}
-	#gift{
-		z-index: 100;
-		animation: chrMove 2s ease-in-out forwards;
-	}
-}
-@media screen and (max-width: 1018px){
-	#gift{
-		display: none;
-	}
-	#loginForm{
-		position: absolute;
-		left: 50%;
-		transform: translateX(-65%);
-	}
-}
-#loginHead{
-	font: bold 24px/80px heiti,arial;
+	margin-top: 150px;
 	text-align: center;
-	color: #333333;
+	font-size: 12px;
+	color: white;
 }
 
-#loginForm input{
-	width: 55%;
-	height: 40px;
-	margin-left: 80px;
-	margin-top: 40px;
-	color: #666666;
-	border: 2px solid #cccccc;
-	font: 16px/50px arail;
-	padding-left: 20px;
+#box #logo{
+	width: 226px;
+	height: 106px;
+	margin-bottom: 25px;
 }
-
-#loginForm input::-webkit-input-placeholder{
-	color: #aaaaaa;
+#user , #password{
+	width: 100%;
+	height: 50px;
+	background: rgba(250,250,250,0.4);
+	margin-bottom: 10px;
 }
-
-#login{
+#user * , #password *{
+	float: left;
+}
+#user img , #password img{
+	float: left;
+	margin: 10px;
+}
+.shu{
+	width: 1px;
+	height: 30px;
+	margin-top: 10px;
+	background: #eeeeee;
+	margin-right: 15px;
+}
+#box .Input{
+	width: 200px;
+	height: 25px;
+	margin-top: 12px;
+	background: transparent;
 	border: none;
-	width: 175px;
+	outline: none;
+	color: white;
+	font-family: simsun;
+	font-size: 14px;
+}
+#wangji{
+	width: 100%;
+	height: 12px;
+}
+#login{
+	width: 100%;
 	height: 50px;
 	background: #333333;
-	color: white;
-	font: 20px/50px arail;
-	transition: all 1s ;
-	margin-left: 100px;
+	text-align: center;
+	font: bold 18px/50px arail;
+	margin-top: 15px;
+	cursor: pointer;
+}
+#other{
+	width: 100%;
+	height: 28px;
 	margin-top: 30px;
 }
-#tiaozhuan{
-	font: bold 16px simsun,arail;
-	color: skyBlue;
-	float: right;
-	margin-right: 20px;
+#other *{
+	cursor: pointer;
 }
-#tiaozhuan:hover{
-	color: red;
+#other img{
+	float: left;
+	margin-right: 10px;
 }
-#login:hover{
-	background: rgb(200, 0, 0);
-}
-#goIndex{
-	display: block;
-	width: 180px;
-	font: bold 24px simsun,arail;
-	color: #666666;
-	margin-left: 80px;
-	margin-top: 40px;
-}
-#goIndex span{
-	font: bold 24px simsun,arail;
-	color: orange;
-	margin-left: 10px;
-}
-@keyframes move{
-	0%{
-		margin-left: 10px;
-	}
-	50%{
-		margin-left: 40px;
-	}
-	100%{
-		margin-left: 10px;
-	}
-}
-#goIndex:hover span{
-	animation: move 1s linear infinite;
-}
+

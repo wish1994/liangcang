@@ -1,0 +1,206 @@
+/*banner部分*/
+#Banner{
+	margin: auto;
+	width: 1000px;
+	height: 475px;
+	position: relative;
+	overflow: hidden;
+}
+#Banner #img{
+	position: absolute;
+	width: 10000px;
+	height: 475px;
+}
+#Banner ul li{
+	float: left;
+}
+#bLine{
+	position: relative;
+	width: 240px;
+	margin: auto;
+	margin-top: 20px;
+}
+#bLine li{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 4px;
+	margin-left: 15px;
+	background: rgb(200,200,200);
+	cursor: pointer;
+}
+#bLine li.current{
+	background: rgb(50, 50, 50);
+}
+
+.bannerBtn{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 10;
+}
+#LeftBtn{
+	top: 212px;
+	left: 30px;
+	display: none;
+}
+#RightBtn{
+	top: 212px;
+	right: 30px;
+	display: none;
+}
+
+/*banner下面商品展示*/
+#Goods{
+	width: 1000px;
+	height: 405px;
+	margin: auto;
+	margin-top: 60px;
+	overflow: hidden;
+}
+#Goods .left , .middle , .right{
+	width: 320px;
+	float: left;
+}
+.left , .middle{
+	margin-right: 20px;
+}
+.left:first-child img , #r1{
+	margin-bottom: 19px;
+}
+
+
+/*人气良品*/
+#Popular{
+	width: 1000px;
+	height: 40px;
+	text-align: center;
+	font: 13px/40px simsun,arail;
+	margin: auto;
+	margin-top: 40px;
+	border-bottom: 2px solid rgb(150, 150, 150);
+}
+
+#GoodShow{
+	width: 1000px;
+	height: 2500px;
+	margin: auto;
+}
+#GoodShow li{
+	width: 318px;
+	height: 360px;
+	margin-right: 23px;
+	margin-top: 42px;
+	float: left;
+	position: relative;
+}
+#GoodShow li img{
+	width: 318px;
+	height: 318px;
+}
+#GoodShow li .text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 318px;
+	height: 318px;
+	background-image: url(http://imgs-qn.iliangcang.com/images/default/shadow_blk1.png);
+	opacity: 0;
+	z-index: 10;
+}
+.text h3{
+	color: #0c6eba;
+	font: italic 20px arail;
+	font-weight: bold;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.text h4{
+	text-align: center;
+	display: block;
+	width: 240px;
+	height: 20px;
+	color: white;
+	font: bold 14px/20px arail;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: 40% 12%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.text div{
+	text-align: center;
+	width: 240px;
+	height: 20px;
+	color: rgb(200,200,200);
+	font: 12px/20px arail;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: 50% 12%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#GoodShow li .who{
+	position: relative;
+	width: 318px;
+	height: 42px;
+	margin-top: 5px;
+}
+#GoodShow li .who .Bimg{
+	width: 40px;
+	height: 40px;
+	box-shadow: 3px 3px 3px rgb(210,210,210);
+}
+#GoodShow li .who .star{
+	margin-top: 12px;
+	float: right;
+}
+#GoodShow li .who .Simg{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+#GoodShow li .who .star *{
+	float: right;
+	font-size: 14px;
+	margin-left: 10px;
+}
+#GoodShow li .who span{
+	position: absolute;
+	top: 15px;
+	left: 70px;
+	font: 16px/20px arail;
+	color: grey;
+}
+
+#more{
+	width: 142px;
+	height: 42px;
+	border: 4px solid rgb(30,30,30);
+	text-align: center;
+	font: italic bold 16px/42px arail;
+	color: rgb(30,30,30);
+	margin: auto;
+	margin-bottom: 90px;
+}
+#more:hover{
+	color: white;
+	background-color: rgb(30,30,30);
+}
+
+#Good{
+	width: 1000px;
+	margin: auto;
+}

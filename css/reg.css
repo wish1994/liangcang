@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input{
+    resize: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+/*注册页样式*/
+
+body{
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    font-family: "Microsoft Yahei",Arial;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#main{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 110px;
+}
+
+#main #regform{
+    width: 100%;
+    display: inline-block;
+    color: #333333;
+}
+
+#regform .reg-tab{
+    width: 565px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    position: relative;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+#regform .reg-tab .reg-logo{
+    height: 160px;
+}
+
+#regform .reg-tab .reg-logo img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-70%);
+    margin-top:27px;
+    margin-bottom: -17px;
+}
+
+#regform .reg-tab .do{
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#regform .reg-tab span{
+    font-size: 14px;
+    opacity: 0.9;
+    padding-right: 20px;
+}
+
+#regform .reg-tab .user #username{
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    background: #cccccc;
+}
+
+input::-webkit-input-placeholder{
+    color:  #ffffff;
+}
+
+#regform .reg-tab .authcode #Txtidcode{
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    background: #cccccc;
+}
+
+#regform .reg-tab .passcode #passcode{
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    background: #cccccc;
+}
+
+#regform .reg-tab .passcode span{
+    padding-right: 6px;
+}
+
+#regform .reg-tab .conf-pwd #conf-pwd{
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    background: #cccccc;
+}
+
+#regform .reg-tab .conf-pwd span{
+    padding-right: 6px;
+}
+
+#regform .reg-tab .conf-pwd #info2{
+    display: none;
+    color:#ff0000;
+}
+#regform .reg-tab .agree{
+    position: relative;
+    left: 65px;
+    margin-top: 20px;
+}
+
+#regform .reg-tab .agree input[type="checkbox"]{
+    vertical-align: middle;
+}
+#regform .reg-tab .agree label{
+    padding-left: 6px;
+}
+
+#regform .reg-tab .agree a{
+    color: #0c79cc;
+}
+
+#regform .reg-tab .regBtn{
+    width: 320px;
+    height: 50px;
+    border: 0;
+    background: #25292e;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 64px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#regform .reg-tab .reglogin{
+    width: 320px;
+    height: 40px;
+    margin-left: 64px;
+    margin-top: 15px;
+    position: relative;
+}
+
+#regform .reg-tab .reglogin .quick-login{
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+#regform .reg-tab .reglogin .quick-login:hover{
+    opacity: 0.5;
+}
+
+#regform .reg-tab .reglogin .icon-qq{
+    background: url("../img/qq.png") no-repeat;
+}
+
+#regform .reg-tab .reglogin .icon-sinaweibo{
+    background: url("../img/sina.png") no-repeat;
+}
+
+#regform .reg-tab .reglogin .icon-douban{
+    background: url("../img/douban.png") no-repeat;
+}
+
+#regform .reg-tab .reglogin .icon-qqweibo{
+    background: url("../img/txweibo.png") no-repeat;
+}
+
+#regform .reg-tab .reglogin .regLC{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ffffff;
+}
